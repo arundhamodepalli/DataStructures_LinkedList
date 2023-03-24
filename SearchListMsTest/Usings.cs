@@ -1,9 +1,8 @@
 global using Microsoft.VisualStudio.TestTools.UnitTesting;
 LinkedList<int> linkedList = new LinkedList<int>();
-linkedList.AddLast(10);
-linkedList.AddLast(20);
+linkedList.AddLast(56);
 linkedList.AddLast(30);
-linkedList.AddLast(40);
+linkedList.AddLast(70);
 
 LinkedListNode<int> currentNode = linkedList.First;
 
@@ -11,17 +10,17 @@ while (currentNode != null)
 {
     if (currentNode.Value == 30)
     {
-        // Found the node with key 30
+        // Found the node with key value 30, insert 40 after it
+        linkedList.AddAfter(currentNode, 40);
         break;
     }
     currentNode = currentNode.Next;
 }
 
-if (currentNode != null)
+// Output the final sequence
+currentNode = linkedList.First;
+while (currentNode != null)
 {
-    Console.WriteLine("Found node with key 30: " + currentNode.Value);
-}
-else
-{
-    Console.WriteLine("Node with key 30 not found.");
+    Console.Write(currentNode.Value + "->");
+    currentNode = currentNode.Next;
 }
