@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures_LinkedList", "DataStructures_LinkedList.csproj", "{6DE30727-3454-4DCD-9D93-76EDC92C85BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedListMsTest", "..\SearchListMsTest\LinkedListMsTest.csproj", "{9AB65235-3884-414E-B66C-8977094C92C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6DE30727-3454-4DCD-9D93-76EDC92C85BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DE30727-3454-4DCD-9D93-76EDC92C85BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DE30727-3454-4DCD-9D93-76EDC92C85BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AB65235-3884-414E-B66C-8977094C92C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AB65235-3884-414E-B66C-8977094C92C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AB65235-3884-414E-B66C-8977094C92C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AB65235-3884-414E-B66C-8977094C92C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
