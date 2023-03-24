@@ -54,6 +54,16 @@ namespace DataStructures_LinkedList
 
             Console.WriteLine();
         }
+
+        internal void Add(int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void popLast()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 

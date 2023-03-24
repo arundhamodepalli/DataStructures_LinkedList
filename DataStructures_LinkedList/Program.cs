@@ -44,12 +44,22 @@
 
 
 
-           // var list = new LinkedList<int>();
+            // var list = new LinkedList<int>();
             //list.Add(56);
             //list.Add(30);
             //list.Add(70);
 
             //list.Pop();
+
+
+
+            LinkedList list = new LinkedList();
+            list.Add(56);
+            list.Add(30);
+            list.Add(70);
+            Console.WriteLine(list); 
+            list.popLast();
+            Console.WriteLine(list);
 
 
 
