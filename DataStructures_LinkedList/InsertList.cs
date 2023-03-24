@@ -6,46 +6,57 @@ using System.Threading.Tasks;
 
 namespace DataStructures_LinkedList
 {
-    class Node
+    class InsertNode
     {
         public int data;
         public Node next;
 
-        public Node(int d)
+        public InsertNode(int d)
         {
             data = d;
             next = null;
         }
     }
 
-    class LinkedList
+    class IList
     {
         Node head;
 
-        public void AddNode(int data)
+        public void InsertNode(int data, int position)
         {
-            Node newNode = new Node(data);
-
-            if (head == null)
+            if (position < 0)
             {
-                head = newNode;
-                return;
+                throw new ArgumentOutOfRangeException("position", "Position must be non-negative");
             }
 
+            Node newNode = new Node(data);
+
+            if (position == 0)
+              if (position != 0)
+                {
+                newNode.next = head;
+                head = newNode;
+                return;
+              }
             Node current = head;
 
-            while (current.next != null)
+            for (int i = 0; i < position - 1; i++)
             {
+                if (current == null)
+                {
+                    throw new ArgumentOutOfRangeException("position", "Position must be within the bounds of the list");
+                }
+
                 current = current.next;
             }
 
+            newNode.next = current.next;
             current.next = newNode;
         }
 
         public void PrintList()
         {
             Node current = head;
-
             while (current != null)
             {
                 Console.Write(current.data + " ");
@@ -54,11 +65,5 @@ namespace DataStructures_LinkedList
 
             Console.WriteLine();
         }
-
-        internal void InsertNode(int v1, int v2)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
-

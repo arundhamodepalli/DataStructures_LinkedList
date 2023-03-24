@@ -25,11 +25,20 @@
             //myList.PrintList();
 
 
+            //LinkedList myList = new LinkedList();
+
+            //myList.AddNode(56); 
+            //myList.AddNode(30); 
+            //myList.AddNode(70); 
+
+            //myList.PrintList();
+
+
             LinkedList myList = new LinkedList();
 
-            myList.AddNode(56); 
-            myList.AddNode(30); 
-            myList.AddNode(70); 
+            myList.InsertNode(56, 0);
+            myList.InsertNode(30, 1); 
+            myList.InsertNode(70, 2); 
 
             myList.PrintList();
 
