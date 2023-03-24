@@ -32,12 +32,13 @@ namespace DataStructures_LinkedList
             Node newNode = new Node(data);
 
             if (position == 0)
-              if (position != 0)
+                if (position != 0)
                 {
                 newNode.next = head;
                 head = newNode;
                 return;
-              }
+            }
+
             Node current = head;
 
             for (int i = 0; i < position - 1; i++)
@@ -57,6 +58,7 @@ namespace DataStructures_LinkedList
         public void PrintList()
         {
             Node current = head;
+
             while (current != null)
             {
                 Console.Write(current.data + " ");

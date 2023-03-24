@@ -54,11 +54,6 @@ namespace DataStructures_LinkedList
 
             Console.WriteLine();
         }
-
-        internal void InsertNode(int v1, int v2)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
 

@@ -34,14 +34,22 @@
             //myList.PrintList();
 
 
-            LinkedList myList = new LinkedList();
+            //LinkedList myList = new LinkedList();
 
-            myList.InsertNode(56, 0);
-            myList.InsertNode(30, 1); 
-            myList.InsertNode(70, 2); 
+            //myList.InsertNode(56, 0);
+            //myList.InsertNode(30, 1); 
+            //myList.InsertNode(70, 2); 
 
-            myList.PrintList();
+            //myList.PrintList();
 
+
+
+            var list = new LinkedList<int>();
+            list.Add(56);
+            list.Add(30);
+            list.Add(70);
+
+            list.Pop();
         }
     }
 }
